@@ -13,7 +13,7 @@ public class LinkedList {
     
     private Node head;
     
-    public void append(int data) {
+    public void append(float data) {
         if(head == null) {
             head = new Node(data);
             return;
@@ -25,13 +25,8 @@ public class LinkedList {
         }
         current.next = new Node(data);
     }
-
-    @Override
-    public String toString() {
-        return super.toString(); //To change body of generated methods, choose Tools | Templates.
-    }
     
-    public void prepend(int data) {
+    public void prepend(float data) {
     
         Node newHead = new Node(data);
         newHead.next = head;
@@ -39,7 +34,7 @@ public class LinkedList {
         
     }
     
-    public void delete(int data) {
+    public void delete(float data) {
     
         if(head == null) return;
         if(head.getData() == data) {
@@ -64,6 +59,11 @@ public class LinkedList {
 
     public void setHead(Node head) {
         this.head = head;
+    }
+
+    @Override
+    public String toString() {
+        return "LinkedList{" + "head=" + head + '}';
     }
     
 }

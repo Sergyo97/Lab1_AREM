@@ -12,9 +12,9 @@ package edu.escuelaing.arem;
 public class Node {
     
     Node next;
-    private int data;
+    private float data;
     
-    public Node(int data) {
+    public Node(float data) {
         this.data = data;
     }
     
@@ -26,12 +26,17 @@ public class Node {
         this.next = next;
     }
 
-    public int getData() {
+    public float getData() {
         return data;
     }
 
-    public void setData(int data) {
+    public void setData(float data) {
         this.data = data;
+    }
+
+    @Override
+    public String toString() {
+        return "Node{" + "next=" + next + ", data=" + data + '}';
     }
     
 }
