@@ -6,12 +6,18 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
- * Hello world!
- *
+ * Class of an App
+ * @author Sergio Ruiz
+ * 
  */
 public class App 
 {
     private static LinkedList lK;
+    
+    /**
+     * Encapsulates the application's main entry point.
+     * @param args
+     */
     public static void main( String[] args ) {
         
         lK = new LinkedList();
@@ -75,6 +81,10 @@ public class App
         
     }
     
+    /**
+     * Method that calculates LinkedList's mean
+     * @return ans Mean value
+     */
     public static float mean() {
         
         float values = 0;
@@ -91,6 +101,10 @@ public class App
         return ans;
     }
     
+    /**
+     * Method that calculates LinkedList's standard deviation
+     * @return Standard deviation value
+     */
     public static String standardDev(){
         double mean = mean();
         double add = 0;
