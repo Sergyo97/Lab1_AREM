@@ -7,13 +7,13 @@ package edu.escuelaing.arem;
 public class Node {
     
     Node next;
-    private float data;
+    private Double data;
     
     /**
      * Constructor of Node
      * @param data Node's value
      */
-    public Node(float data) {
+    public Node(Double data) {
         this.data = data;
     }
     
@@ -37,7 +37,7 @@ public class Node {
      * Give Node's value
      * @return data Node's value
      */
-    public float getData() {
+    public Double getData() {
         return data;
     }
 
@@ -45,7 +45,7 @@ public class Node {
      * Set Node's value
      * @param data Value to set the node
      */
-    public void setData(float data) {
+    public void setData(Double data) {
         this.data = data;
     }
 

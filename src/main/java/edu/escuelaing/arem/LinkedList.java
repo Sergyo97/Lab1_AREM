@@ -18,7 +18,7 @@ public class LinkedList {
      * Method that add a new node to LinkedList end
      * @param data New node value
      */
-    public void append(float data) {
+    public void append(Double data) {
         if(head == null) {
             head = new Node(data);
             return;
@@ -35,7 +35,7 @@ public class LinkedList {
      * Method that add a new node to LinkedList begin
      * @param data 
      */
-    public void prepend(float data) {
+    public void prepend(Double data) {
     
         Node newHead = new Node(data);
         newHead.next = head;
@@ -47,7 +47,7 @@ public class LinkedList {
      * Method that delete a node from the LinkedList
      * @param data Value to find the node to delete
      */
-    public void delete(float data) {
+    public void delete(Double data) {
     
         if(head == null) return;
         if(head.getData() == data) {
